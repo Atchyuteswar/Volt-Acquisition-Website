@@ -3,10 +3,8 @@ export default function Footer() {
     <footer className="border-t border-white/5 py-10">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
-          <div className="w-6 h-6 rounded-md bg-blue-500 flex items-center justify-center">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 1L10 6L6 11L2 6L6 1Z" fill="white" />
-            </svg>
+          <div className="w-6 h-6 flex items-center justify-center overflow-hidden">
+            <img src="/assets/volt_mascot.png" alt="Volt Logo" className="w-full h-full object-contain" />
           </div>
           <span className="font-bold tracking-widest text-xs text-white">VOLT</span>
           <span className="text-white/20 text-xs ml-2">AI-Powered Health Intelligence Platform</span>

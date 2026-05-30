@@ -21,10 +21,8 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-md bg-blue-500 flex items-center justify-center">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M7 1L12 7L7 13L2 7L7 1Z" fill="white" />
-            </svg>
+          <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
+            <img src="/assets/volt_mascot.png" alt="Volt Logo" className="w-full h-full object-contain" />
           </div>
           <span className="font-bold tracking-widest text-sm text-white">VOLT</span>
         </div>
