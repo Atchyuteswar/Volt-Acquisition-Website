@@ -42,7 +42,9 @@ export default function AcquisitionCTA() {
               </svg>
             </a>
             <a
-              href="#"
+              href="/assets/Volt%20Pitch%20Presentation.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 hover:-translate-y-1"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

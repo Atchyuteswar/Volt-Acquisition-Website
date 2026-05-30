@@ -62,7 +62,9 @@ export default function Hero() {
               className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
             >
               <a
-                href="#"
+                href="/assets/Volt%20Pitch%20Presentation.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:-translate-y-0.5"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
