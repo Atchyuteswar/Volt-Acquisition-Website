@@ -70,6 +70,7 @@ export default function Contact() {
           </div>
         </FadeUp>
 
+        <FadeUp delay={0.25}>
           <a
             href="mailto:yt.atchyut@gmail.com"
             className="group inline-flex items-center justify-center gap-3 w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-blue-500 hover:bg-blue-400 text-white rounded-full text-sm sm:text-base font-medium tracking-wide transition-all duration-200 hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-[1.02]"
