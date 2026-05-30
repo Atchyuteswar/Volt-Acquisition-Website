@@ -35,10 +35,21 @@ export default function Acquisition() {
             <h2 className="text-5xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
               Available for Acquisition
             </h2>
-            <p className="text-white/40 text-lg max-w-xl mx-auto">
+            <p className="text-white/40 text-lg max-w-xl mx-auto mb-8">
               VOLT is a fully developed AI-powered health platform available for acquisition, 
               licensing, or strategic partnerships.
             </p>
+            <a
+              href="#"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-semibold tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:-translate-y-1"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Acquisition Deck
+            </a>
           </div>
         </FadeUp>
 

@@ -17,10 +17,13 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/40 bg-blue-500/10 mb-8 shadow-[0_0_20px_rgba(59,130,246,0.15)] relative overflow-hidden group cursor-default"
             >
-              <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-              <span className="text-blue-400 text-xs tracking-wider">AVAILABLE FOR ACQUISITION</span>
+              <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="relative flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+                <span className="text-blue-300 font-medium text-xs tracking-[0.2em] uppercase">Available for Acquisition</span>
+              </div>
             </motion.div>
 
             <motion.h1
@@ -59,13 +62,15 @@ export default function Hero() {
               className="flex flex-wrap gap-3"
             >
               <a
-                href="#acquisition"
-                className="group inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-400 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/25"
+                href="#"
+                className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:-translate-y-0.5"
               >
-                View Acquisition Deck
-                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 16 16" fill="none">
-                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
+                Download Acquisition Deck
               </a>
               <a
                 href="#aira"

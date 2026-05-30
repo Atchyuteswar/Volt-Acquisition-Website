@@ -23,24 +23,25 @@ export default function Founder() {
         </FadeUp>
 
         <FadeUp delay={0.15}>
-          <h2 className="text-3xl font-black text-white tracking-tight mb-1">
+          <div className="text-sm font-medium text-white/50 mb-2 uppercase tracking-[0.2em]">Built End-to-End By</div>
+          <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-2">
             Atchyuteswar Gottumukkala
           </h2>
-          <p className="text-blue-400 font-medium mb-6">Founder & Product Engineer</p>
+          <p className="text-blue-400 font-medium mb-8 text-lg">Founder & Product Engineer</p>
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <p className="text-white/50 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            Built VOLT end-to-end — from the Android application and AI architecture to backend systems, 
-            cloud automation, database design, notification infrastructure, and product strategy. 
-            A solo builder with full-stack expertise across mobile, AI, and cloud.
+          <p className="text-white/60 text-lg leading-relaxed mb-10 max-w-2xl mx-auto font-light">
+            Built VOLT end-to-end — from the initial product strategy and user experience design, 
+            to the core Android application, AI architecture, and scalable cloud infrastructure. 
+            A solo builder with deep expertise across the entire modern technical stack.
           </p>
         </FadeUp>
 
         <FadeUp delay={0.25}>
-          <div className="flex flex-wrap gap-2 justify-center mb-12">
-            {["Product Engineering", "Android Development", "AI Systems", "Cloud Architecture", "Backend Engineering", "Database Design"].map((skill) => (
-              <span key={skill} className="px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-xs text-white/50">
+          <div className="flex flex-wrap gap-3 justify-center mb-16">
+            {["Android Engineering", "AI Systems", "Cloud Architecture", "Product Strategy", "User Experience Design"].map((skill) => (
+              <span key={skill} className="px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 hover:bg-blue-500/10 transition-colors text-sm text-white/70 font-medium">
                 {skill}
               </span>
             ))}

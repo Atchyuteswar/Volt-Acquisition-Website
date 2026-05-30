@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export const metadata: Metadata = {
   title: "VOLT — AI-Powered Health Intelligence Platform | Acquisition Opportunity",
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <ScrollProgress />
         <div className="noise" aria-hidden="true" />
         {children}
       </body>
