@@ -9,8 +9,8 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
       <div className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full bg-blue-600/8 blur-[100px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 pt-32 pb-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-24 lg:pt-32 pb-16 lg:pb-20 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left */}
           <div>
             <motion.div
@@ -30,7 +30,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[clamp(5rem,12vw,9rem)] font-black tracking-[-0.04em] leading-none mb-6"
+              className="text-[clamp(3.5rem,12vw,9rem)] font-black tracking-[-0.04em] leading-none mb-6"
             >
               <span className="text-gradient">VOLT</span>
             </motion.h1>
@@ -59,11 +59,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.55 }}
-              className="flex flex-wrap gap-3"
+              className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
             >
               <a
                 href="#"
-                className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:-translate-y-0.5"
+                className="group w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-medium tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:-translate-y-0.5"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -74,7 +74,7 @@ export default function Hero() {
               </a>
               <a
                 href="#aira"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-white/20 text-white/70 hover:text-white rounded-full text-sm font-medium tracking-wide transition-all duration-200"
+                className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-white/20 text-white/70 hover:text-white rounded-full text-sm font-medium tracking-wide transition-all duration-200"
               >
                 <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
                   <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.5"/>
@@ -84,7 +84,7 @@ export default function Hero() {
               </a>
               <a
                 href="mailto:yt.atchyut@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-white/20 text-white/70 hover:text-white rounded-full text-sm font-medium tracking-wide transition-all duration-200"
+                className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-white/20 text-white/70 hover:text-white rounded-full text-sm font-medium tracking-wide transition-all duration-200"
               >
                 Contact Founder
               </a>
@@ -95,7 +95,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.75 }}
-              className="flex gap-8 mt-14 pt-10 border-t border-white/6"
+              className="flex flex-wrap gap-6 sm:gap-8 mt-12 sm:mt-14 pt-8 sm:pt-10 border-t border-white/6"
             >
               {[
                 { value: "$650B+", label: "Total Market" },
@@ -120,7 +120,7 @@ export default function Hero() {
             <div className="relative">
               {/* Glow behind phone */}
               <div className="absolute inset-0 bg-blue-500/20 blur-[60px] rounded-full scale-75 translate-y-8" />
-              <div className="relative float w-64 md:w-72">
+              <div className="relative float w-56 sm:w-64 md:w-72">
                 <PhoneMockup variant="dashboard" imageSrc="/assets/Home%20Screen.jpeg" />
               </div>
               {/* Floating cards */}
@@ -128,7 +128,7 @@ export default function Hero() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.9, duration: 0.6 }}
-                className="absolute -left-16 top-16 bg-[#0e0e0e] border border-white/8 rounded-xl px-4 py-3 backdrop-blur-sm"
+                className="hidden sm:block absolute -left-16 top-16 bg-[#0e0e0e] border border-white/8 rounded-xl px-4 py-3 backdrop-blur-sm"
               >
                 <div className="text-xs text-white/40 mb-1">Protein Today</div>
                 <div className="text-white font-semibold">142g <span className="text-blue-400 text-xs">↑ 12%</span></div>
@@ -137,7 +137,7 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.1, duration: 0.6 }}
-                className="absolute -right-12 bottom-32 bg-[#0e0e0e] border border-blue-500/20 rounded-xl px-4 py-3 backdrop-blur-sm"
+                className="hidden sm:block absolute -right-12 bottom-32 bg-[#0e0e0e] border border-blue-500/20 rounded-xl px-4 py-3 backdrop-blur-sm"
               >
                 <div className="flex items-center gap-2 mb-1">
                   <div className="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center">

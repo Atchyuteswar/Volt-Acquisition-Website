@@ -3,8 +3,8 @@ import FadeUp from "./FadeUp";
 
 export default function Founder() {
   return (
-    <section className="py-32 relative">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="py-20 md:py-32 relative">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <FadeUp>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 mb-12">
             <span className="text-white/50 text-xs tracking-wider">THE FOUNDER</span>
@@ -14,7 +14,7 @@ export default function Founder() {
         <FadeUp delay={0.1}>
           <div className="relative inline-block mb-8">
             {/* Avatar */}
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-[2rem] bg-gradient-to-br from-blue-500/30 to-blue-800/30 border border-blue-500/30 flex items-center justify-center mx-auto overflow-hidden">
+            <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-[2rem] bg-gradient-to-br from-blue-500/30 to-blue-800/30 border border-blue-500/30 flex items-center justify-center mx-auto overflow-hidden">
               <img src="/assets/image-atchyut.jpg" alt="Atchyuteswar Gottumukkala" className="w-full h-full object-cover" />
             </div>
             {/* Pulse ring */}
@@ -24,7 +24,7 @@ export default function Founder() {
 
         <FadeUp delay={0.15}>
           <div className="text-sm font-medium text-white/50 mb-2 uppercase tracking-[0.2em]">Built End-to-End By</div>
-          <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-2">
+          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-2">
             Atchyuteswar Gottumukkala
           </h2>
           <p className="text-blue-400 font-medium mb-8 text-lg">Founder & Product Engineer</p>

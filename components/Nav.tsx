@@ -16,7 +16,7 @@ export default function Nav() {
         scrolled ? "bg-[#050505]/90 backdrop-blur-xl border-b border-white/5" : ""
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 flex items-center justify-center overflow-hidden">
             <img src="/assets/volt_mascot.png" alt="Volt Logo" className="w-full h-full object-contain" />
@@ -32,9 +32,9 @@ export default function Nav() {
         </div>
         <a
           href="mailto:yt.atchyut@gmail.com"
-          className="text-xs bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded-full tracking-wider transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20"
+          className="text-[10px] sm:text-xs bg-blue-500 hover:bg-blue-400 text-white px-3 sm:px-4 py-2 rounded-full tracking-wider transition-all duration-200 hover:shadow-lg hover:shadow-blue-500/20"
         >
-          Contact Founder
+          Contact <span className="hidden sm:inline">Founder</span>
         </a>
       </div>
     </motion.nav>

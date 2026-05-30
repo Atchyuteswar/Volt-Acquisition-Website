@@ -37,17 +37,17 @@ const layers = [
 
 export default function TechStack() {
   return (
-    <section className="py-32 relative overflow-hidden bg-[#0a0a0a]">
+    <section className="py-20 md:py-32 relative overflow-hidden bg-[#0a0a0a]">
       {/* Premium Divider Top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-5" />
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/5 blur-[120px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <FadeUp>
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-6">
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4 sm:mb-6">
               Built With Modern Technologies
             </h2>
             <p className="text-white/50 text-lg max-w-2xl mx-auto font-light">
@@ -57,7 +57,7 @@ export default function TechStack() {
         </FadeUp>
 
         {/* Tech badges */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 justify-center mb-16 sm:mb-20">
           {techs.map((tech, i) => (
             <FadeUp key={tech.name} delay={i * 0.1}>
               <div className="group flex flex-col p-6 rounded-2xl border border-white/10 bg-[#111] hover:bg-[#151515] hover:border-blue-500/30 transition-all duration-300 cursor-default shadow-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:-translate-y-1 relative overflow-hidden">

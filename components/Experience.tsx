@@ -42,12 +42,12 @@ export default function Experience() {
 
 
   return (
-    <section ref={containerRef} className="py-32 relative overflow-hidden bg-[#020202]">
+    <section ref={containerRef} className="py-20 md:py-32 relative overflow-hidden bg-[#020202]">
       {/* Premium background elements */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-5" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-blue-500/5 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function Experience() {
           className="flex flex-col md:flex-row items-center justify-between mb-16 gap-6"
         >
           <div className="text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl font-black mb-4 tracking-tight text-white">
+            <h2 className="text-3xl md:text-5xl font-black mb-4 tracking-tight text-white">
               Experience VOLT
             </h2>
             <p className="text-xl text-white/50 max-w-2xl font-light">
@@ -89,7 +89,7 @@ export default function Experience() {
         </motion.div>
 
         {/* Grid container for exactly 3 items */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pb-10 min-h-[600px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pb-10 min-h-[500px] md:min-h-[600px]">
           <AnimatePresence mode="popLayout">
             {experiences.slice(currentIndex, currentIndex + 3).map((exp, index) => (
               <motion.div

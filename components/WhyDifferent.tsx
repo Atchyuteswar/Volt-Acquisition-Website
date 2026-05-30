@@ -55,14 +55,14 @@ const cards = [
 
 export default function WhyDifferent() {
   return (
-    <section className="py-32 relative" id="technology">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 md:py-32 relative" id="technology">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 mb-6">
               <span className="text-white/50 text-xs tracking-wider">DIFFERENTIATION</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
+            <h2 className="text-4xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
               Why VOLT Is Different
             </h2>
             <p className="text-white/40 text-lg max-w-xl mx-auto">
@@ -71,7 +71,7 @@ export default function WhyDifferent() {
           </div>
         </FadeUp>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
           {cards.map((c, i) => (
             <FadeUp key={c.number} delay={i * 0.1}>
               <div className="group relative p-8 rounded-2xl border border-white/6 bg-white/[0.02] hover:border-blue-500/20 transition-all duration-300 overflow-hidden h-full">

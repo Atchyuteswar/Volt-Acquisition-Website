@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export default function ProductDemo() {
   return (
-    <section className="py-24 relative overflow-hidden bg-[#050505]">
+    <section className="py-16 md:py-24 relative overflow-hidden bg-[#050505]">
       {/* Premium Divider Top */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
       
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ export default function ProductDemo() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-black mb-6 tracking-tight text-white">
+          <h2 className="text-3xl md:text-5xl font-black mb-4 sm:mb-6 tracking-tight text-white">
             Watch VOLT in Action
           </h2>
           <p className="text-lg text-white/50 max-w-2xl mx-auto font-light">

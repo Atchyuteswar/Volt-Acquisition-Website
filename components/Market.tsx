@@ -3,14 +3,14 @@ import FadeUp from "./FadeUp";
 
 export default function Market() {
   return (
-    <section className="py-32 relative overflow-hidden" id="market">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 md:py-32 relative overflow-hidden" id="market">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 mb-6">
               <span className="text-white/50 text-xs tracking-wider">MARKET OPPORTUNITY</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
+            <h2 className="text-4xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
               Where Markets Converge
             </h2>
             <p className="text-white/40 text-lg max-w-xl mx-auto">
@@ -19,7 +19,7 @@ export default function Market() {
           </div>
         </FadeUp>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Venn diagram */}
           <FadeUp delay={0.1}>
             <div className="relative flex items-center justify-center h-80">
@@ -74,12 +74,12 @@ export default function Market() {
                   color: "cyan",
                 },
               ].map((m) => (
-                <div key={m.label} className="flex gap-5 p-5 rounded-xl border border-white/6 bg-white/[0.02]">
+                <div key={m.label} className="flex flex-col sm:flex-row gap-4 sm:gap-5 p-4 sm:p-5 rounded-xl border border-white/6 bg-white/[0.02]">
                   <div>
                     <div className="text-xs text-white/30 tracking-widest mb-1">{m.label}</div>
                     <div className="text-3xl font-black text-gradient-blue">{m.value}</div>
                   </div>
-                  <div className="border-l border-white/6 pl-5 flex items-center">
+                  <div className="border-t sm:border-t-0 sm:border-l border-white/6 pt-4 sm:pt-0 sm:pl-5 flex items-center">
                     <p className="text-sm text-white/40 leading-relaxed">{m.desc}</p>
                   </div>
                 </div>

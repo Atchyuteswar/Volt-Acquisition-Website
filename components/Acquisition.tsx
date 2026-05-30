@@ -21,18 +21,18 @@ const partners = [
 
 export default function Acquisition() {
   return (
-    <section className="py-32 relative overflow-hidden" id="acquisition">
+    <section className="py-20 md:py-32 relative overflow-hidden" id="acquisition">
       <div className="absolute inset-0 grid-pattern opacity-30" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[200px] bg-blue-500/6 blur-[100px]" />
 
-      <div className="max-w-7xl mx-auto px-6 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
         <FadeUp>
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 mb-6">
               <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
               <span className="text-blue-400 text-xs tracking-wider">ACQUISITION OPPORTUNITY</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
+            <h2 className="text-4xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
               Available for Acquisition
             </h2>
             <p className="text-white/40 text-lg max-w-xl mx-auto mb-8">
@@ -41,7 +41,7 @@ export default function Acquisition() {
             </p>
             <a
               href="#"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-semibold tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:-translate-y-1"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white rounded-full text-sm font-semibold tracking-wide transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:-translate-y-1"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -97,7 +97,7 @@ export default function Acquisition() {
 
         {/* Why acquire highlight */}
         <FadeUp delay={0.3}>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
               { title: "Production Ready", desc: "Deploy, scale, or commercialize immediately — no further development required." },
               { title: "AI Infrastructure", desc: "Aira AI coaching engine fully integrated with serverless architecture and automation." },

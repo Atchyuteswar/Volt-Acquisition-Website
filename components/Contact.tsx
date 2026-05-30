@@ -3,18 +3,18 @@ import FadeUp from "./FadeUp";
 
 export default function Contact() {
   return (
-    <section className="py-32 relative overflow-hidden" id="contact">
+    <section className="py-20 md:py-32 relative overflow-hidden" id="contact">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[600px] h-[400px] bg-blue-600/8 blur-[120px] rounded-full" />
       </div>
 
-      <div className="max-w-3xl mx-auto px-6 text-center relative">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center relative">
         <FadeUp>
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 mb-8">
             <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
             <span className="text-blue-400 text-xs tracking-wider">START A CONVERSATION</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-black tracking-[-0.04em] text-gradient mb-6">
+          <h2 className="text-4xl md:text-7xl font-black tracking-[-0.04em] text-gradient mb-4 sm:mb-6">
             Let's Talk
           </h2>
           <p className="text-white/40 text-lg mb-12 max-w-lg mx-auto">
@@ -70,10 +70,9 @@ export default function Contact() {
           </div>
         </FadeUp>
 
-        <FadeUp delay={0.25}>
           <a
             href="mailto:yt.atchyut@gmail.com"
-            className="group inline-flex items-center gap-3 px-10 py-4 bg-blue-500 hover:bg-blue-400 text-white rounded-full text-base font-medium tracking-wide transition-all duration-200 hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-[1.02]"
+            className="group inline-flex items-center justify-center gap-3 w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-blue-500 hover:bg-blue-400 text-white rounded-full text-sm sm:text-base font-medium tracking-wide transition-all duration-200 hover:shadow-2xl hover:shadow-blue-500/30 hover:scale-[1.02]"
           >
             Start Acquisition Discussion
             <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" viewBox="0 0 16 16" fill="none">

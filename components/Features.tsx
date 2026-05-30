@@ -72,14 +72,14 @@ export default function Features() {
   const prev = () => setActive((p) => (p - 1 + features.length) % features.length);
 
   return (
-    <section className="py-32 relative" id="product">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-20 md:py-32 relative" id="product">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <FadeUp>
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 mb-6">
               <span className="text-white/50 text-xs tracking-wider">PLATFORM FEATURES</span>
             </div>
-            <h2 className="text-5xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
+            <h2 className="text-4xl md:text-6xl font-black tracking-[-0.03em] text-gradient mb-4">
               Product Showcase
             </h2>
             <p className="text-white/40 text-lg max-w-xl mx-auto">
