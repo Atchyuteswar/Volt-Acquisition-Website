@@ -29,8 +29,8 @@ export default function Home() {
       <Acquisition />
       <DataRoom />
       <Founder />
-      <FAQ /> 
       <Contact />
+      <FAQ /> 
       <Footer />
     </main>
   );
