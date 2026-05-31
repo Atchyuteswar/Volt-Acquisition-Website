@@ -14,7 +14,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/atchyuteswar/" target="_blank" rel="noopener noreferrer" className="text-xs text-white/30 hover:text-white/60 transition-colors">LinkedIn</a>
           <a href="https://atchyut.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs text-white/30 hover:text-white/60 transition-colors">Portfolio</a>
         </div>
-        <p className="text-xs text-white/20">© 2024 VOLT. All rights reserved.</p>
+        <p className="text-xs text-white/20">© 2026 VOLT. All rights reserved.</p>
       </div>
     </footer>
   );

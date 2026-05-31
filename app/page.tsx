@@ -9,6 +9,7 @@ import DevelopmentStatus from "@/components/DevelopmentStatus";
 import Market from "@/components/Market";
 import Acquisition from "@/components/Acquisition";
 import Founder from "@/components/Founder";
+import FAQ from "@/components/FAQ";
 import AcquisitionCTA from "@/components/AcquisitionCTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -27,6 +28,7 @@ export default function Home() {
       <Market />
       <Acquisition />
       <Founder />
+      <FAQ />
       <AcquisitionCTA />
       <Contact />
       <Footer />
