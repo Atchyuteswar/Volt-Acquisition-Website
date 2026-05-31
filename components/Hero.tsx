@@ -90,6 +90,16 @@ export default function Hero() {
               >
                 Contact Founder
               </a>
+              <a
+                href="#data-room"
+                className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 border border-white/10 hover:border-white/20 text-white/70 hover:text-white rounded-full text-sm font-medium tracking-wide transition-all duration-200"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                Access Data Room
+              </a>
             </motion.div>
 
             {/* Stats */}
