@@ -11,7 +11,6 @@ import Acquisition from "@/components/Acquisition";
 import Founder from "@/components/Founder";
 import DataRoom from "@/components/DataRoom";
 import FAQ from "@/components/FAQ";
-import AcquisitionCTA from "@/components/AcquisitionCTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -28,10 +27,9 @@ export default function Home() {
       <DevelopmentStatus />
       <Market />
       <Acquisition />
-      <Founder />
       <DataRoom />
-      <FAQ />
-      <AcquisitionCTA />
+      <Founder />
+      <FAQ /> 
       <Contact />
       <Footer />
     </main>
